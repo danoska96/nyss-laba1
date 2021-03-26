@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laba1
 {
-    class Caesar
+    public class Caesar
     {
         public static string CaesarMethod(string str, uint sdv, string dir, string alph, string action)
         {
@@ -162,7 +162,7 @@ namespace Laba1
                                 {
                                     if ((nums.IndexOf(letter) - num) < 0)
                                     {
-                                        letter = nums[(10) + (nums.IndexOf(letter) - num)];
+                                        letter = nums[((40) + (nums.IndexOf(letter) - num))%10];
                                     }
                                     else
                                     {
@@ -201,7 +201,7 @@ namespace Laba1
                                 {
                                     if ((nums.IndexOf(letter) - num) < 0)
                                     {
-                                        letter = nums[(10) + (nums.IndexOf(letter) - num)];
+                                        letter = nums[((40) + (nums.IndexOf(letter) - num))%10];
                                     }
                                     else
                                     {

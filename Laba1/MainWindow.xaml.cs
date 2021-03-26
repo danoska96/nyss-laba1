@@ -65,8 +65,9 @@ namespace Laba1
             {
                 length = 34;
             }
+            Nums.Items.Clear();
             for (int i = 1; i < length; i++)
-            {
+            {                
                 TextBox newNote = new TextBox();
                 newNote.Text = i.ToString();
                 newNote.IsReadOnly = true;
